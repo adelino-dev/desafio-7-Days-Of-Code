@@ -1,15 +1,32 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --background-color: #ffffff;
+    
+    --main-font: font-family: 'Inter', sans-serif;
+  }
+
 *{
-    margin: 0px;
-    padding: 0px;
     border: 0px;
+
+    font-family: 'Inter', sans-serif;
 }
 
+/*------------------ Geral: */
+body{
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+p{
+    color: var(--text-color);
+}
+/*------------------ Nav ------------------ */
 nav{
-    background-color: #fff;
-    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
     font-size: 16px;
     text-align: center;
 
@@ -18,7 +35,6 @@ nav{
     align-items: center;
     align-content: space-around;
     flex-wrap: nowrap;
-    padding: 20px;
 }
 
 nav #logo{
@@ -26,30 +42,22 @@ nav #logo{
     flex-grow: 1;
 }
 
-nav #logo a{
-    position: static;
-    width: 113px;
-    height: 24px;
-    left: 35px;
-    top: 1.5px;
-
-    font-family: 'Inter';
-    font-style: normal;
+nav #logo strong{
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 18px;;
+    vertical-align: super;
 
     color: #3A404E;
 }
 nav #paginas{
     flex-grow: 2;
-    align-self: baseline;
 }
+
 nav #paginas a{
     text-decoration: none;
-    color: #667085;
-
+    color: var(--text-color);
 }
+
 nav #botoes{
     flex-grow: 1;
 }
@@ -62,11 +70,28 @@ nav button{
 }
 
 #botaoEntrar{
-    background-color: #fff;
+    background-color: var(--background-color);
     color: #667085;
 }
 
 #botaoCadastrar{
-    background-color: #8E2424;
-    color: #fff;
+    background-color: var(--main-color);
+    color: var(--background-color);
+}
+
+/*------------------ Sobre Nós ------------------ */
+#sobreNos{
+    margin: 100px;
+    align-items: center;
+}
+
+#sobreNos span{ 
+    color: var(--main-color)
+}
+
+#sobrenos p{
+    font-weight: 600;
+    
+    width: min-content;
+    margin: auto 500px auto 500px;
 }
