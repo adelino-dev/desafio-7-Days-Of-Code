@@ -28,9 +28,9 @@
     </ul>
   <h3>Responsáveis:</h3>
       <ul>
-        <li>Instagram da Giovanna:<a href="https://www.instagram.com/p/Cb8ZotDB38H/" target="_blank">girl.coding</a>
-        <li>YouTube da Giovanna:<a href= "https://www.youtube.com/c/GirlCoding" target="_blank">Girl Coding</a>
-        <li>LinkedIn da Giovanna:<a href="https://www.linkedin.com/in/giovannamoeller/" target="_blank">Giovanna Moeller</a>
+        <li>Instagram da Giovanna: <a href="https://www.instagram.com/p/Cb8ZotDB38H/" target="_blank">girl.coding</a>
+        <li>YouTube da Giovanna: <a href= "https://www.youtube.com/c/GirlCoding" target="_blank">Girl Coding</a>
+        <li>LinkedIn da Giovanna: <a href="https://www.linkedin.com/in/giovannamoeller/" target="_blank">Giovanna Moeller</a>
         <br>
         <li>Site da Alura: <a href= "https://www.alura.com.br/">https://www.alura.com.br/</a>
       </ul>
