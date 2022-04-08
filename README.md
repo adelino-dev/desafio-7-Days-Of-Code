@@ -9,7 +9,7 @@
       O objetivo é incentivar iniciantes em Desenvolvimento Web a por em prática conhecimentos de HTML e CSS através do desafio.<br>
       E para isso, a cada dia somos desafiados a construir uma estrutura do site.<br>
       <br>
-  <img src="https://ci3.googleusercontent.com/proxy/WOBOAFetauo_l1VQzefPXMW1F5uglA1_8oHul0N7iMsOPxQIoxelOaDhmXG0Use9qKkoaqLHwdK3jKrukB1KPvdiG7DvHC4CxfSY7cqa_aaLU6j2I3_UpFmxWXrowuzKV5Vfm2RIvIXe-CyV5HI1C3PRa6xW=s0-d-e1-ft#https://content.app-us1.com/MpJmZ/2022/03/25/8fbbe25d-1ea0-4b28-8c41-9873987aec58.gif?r=1175663824" width="510" style="display:block;border:none;outline:none;width:510px;opacity:1;max-width:100%!important" class="CToWUd a6T" tabindex="0" alt="Demonstração de como será o site">
+  <img src="https://ci3.googleusercontent.com/proxy/WOBOAFetauo_l1VQzefPXMW1F5uglA1_8oHul0N7iMsOPxQIoxelOaDhmXG0Use9qKkoaqLHwdK3jKrukB1KPvdiG7DvHC4CxfSY7cqa_aaLU6j2I3_UpFmxWXrowuzKV5Vfm2RIvIXe-CyV5HI1C3PRa6xW=s0-d-e1-ft#https://content.app-us1.com/MpJmZ/2022/03/25/8fbbe25d-1ea0-4b28-8c41-9873987aec58.gif?r=1175663824" alt="Demonstração de como será o site">
   
   </p>
   
@@ -34,9 +34,9 @@
         <br>
         <li>Site da Alura: <a href= "https://www.alura.com.br/">https://www.alura.com.br/</a>
       </ul>
-        
-      <p>Segue abaixo o link caso você também queira participar:</p>
-      <a href = "7daysofcode.io/matricula/html-css"target="_blank">7daysofcode.io/matricula/html-css</a>
-
+      <p>
+        Segue abaixo o link caso você também queira participar: <br>
+        <a href = "7daysofcode.io/matricula/html-css"target="_blank">7daysofcode.io/matricula/html-css</a>
+      </p>
 <h2>Como o site deve estar ao fim do Projeto:</h2>
 <img src="images/7daysOfCode-HTML-CSS (Copy).png" alt="Referencia do Projeto">
