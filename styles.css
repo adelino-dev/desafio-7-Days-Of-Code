@@ -95,3 +95,29 @@ nav button{
     width: min-content;
     margin: auto 500px auto 500px;
 }
+
+/*------------------ Métricas ------------------ */
+
+.metricas-container{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: left;
+    
+
+
+}
+
+.metricas-container div{
+    width: 250px;
+}
+
+.metricas-container h1{
+    color: var(--main-color);
+    font-size: 50px;
+    margin: 0px;
+}
+
+.metricas-container h2{
+    font-size: 16px;
+}
