@@ -10,13 +10,15 @@
   }
 
 *{
-    border: 0px;
-
+    border: none;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
 /*------------------ Geral: */
 body{
+    width: 100%;
+    height: 100vh;
     background-color: var(--background-color);
     text-align: center;
 }
@@ -34,44 +36,28 @@ nav{
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    flex-wrap: nowrap;
-}
-
-nav #logo{
-    align-self: center;
-    flex-grow: 1;
-}
-
-nav #logo strong{
-    font-weight: 500;
-    font-size: 18px;;
-    vertical-align: super;
-
-    color: #3A404E;
-}
-nav #paginas{
-    flex-grow: 2;
+    padding: 1rem 0;
 }
 
 nav #paginas a{
     text-decoration: none;
     color: var(--text-color);
+    margin-right: 2rem;
 }
-
-nav #botoes{
-    flex-grow: 1;
-}
-
 
 nav button{
-    padding: 10px 15px 10px 15px;
-    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.192);
+    
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 #botaoEntrar{
     background-color: var(--background-color);
-    color: #667085;
+    color: var(--text-color);
 }
 
 #botaoCadastrar{
@@ -89,11 +75,15 @@ nav button{
     color: var(--main-color)
 }
 
+#sobreNos h1 {
+    font-size: 2rem;
+}
+
 #sobrenos p{
     font-weight: 600;
-    
-    width: min-content;
-    margin: auto 500px auto 500px;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5rem;
 }
 
 /*------------------ Métricas ------------------ */
