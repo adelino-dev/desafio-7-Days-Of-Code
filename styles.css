@@ -3,6 +3,7 @@
 
 :root {
     --text-color: #667085;
+    --main-color-suave: #8e24240a;
     --main-color: #8E2424;
     --background-color: #ffffff;
     
@@ -25,6 +26,13 @@ body{
 
 p{
     color: var(--text-color);
+}
+
+.etiqueta{
+    background-color: var(--main-color-suave);
+    color: var(--main-color);
+    padding: 0.3em;
+    border-radius: 6em;
 }
 /*------------------ Nav ------------------ */
 nav{
@@ -71,10 +79,6 @@ nav button{
     align-items: center;
 }
 
-#sobreNos span{ 
-    color: var(--main-color)
-}
-
 #sobreNos h1 {
     font-size: 2rem;
 }
@@ -113,15 +117,9 @@ nav button{
 }
 
 /*------------------ Main ------------------ */
-
-main>div>span{
-    background-color: #6670852a;;
-    color: var(--main-color);
-    padding: 0.3em;
-    border-radius: 6em;
+main{
+    margin: 5em 10em 5em 10em;
 }
-
-
 /*------ Section Vagas:*/
 
 #vagas{
@@ -131,7 +129,7 @@ main>div>span{
     font-size: 1.2em;
     font-weight: 600;
     text-align: left;
-    margin-top: 5em;
+    margin-top: ;
 }
 
 .vaga {
@@ -166,4 +164,33 @@ main>div>span{
 
 
 
+/*------------------ Aside: ------------------ */
+aside{
+    background-color: var(--main-color-suave);
+    padding: 5em 1em; 
+}
+aside blockquote{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1em 5em;    
+}
+
+.colaborador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.colaborador .nome{
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.colaborador .oficio{
+    color: var(--text-color);
+    margin-top: 0.4em;
+    font-size: 
+}
 
