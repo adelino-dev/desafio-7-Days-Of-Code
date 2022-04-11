@@ -114,9 +114,56 @@ nav button{
 
 /*------------------ Main ------------------ */
 
-main span{
+main>div>span{
     background-color: #6670852a;;
     color: var(--main-color);
     padding: 0.3em;
     border-radius: 6em;
 }
+
+
+/*------ Section Vagas:*/
+
+#vagas{
+    margin: 2em 20%;
+}
+#vagas h2{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 5em;
+}
+
+.vaga {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: baseline;
+
+    border-radius: 0.6rem;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.192);
+    padding: 2em 5em 2em 2em ;
+    margin: 2em auto;
+}
+
+.titulo-vaga{
+    margin: 0px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    padding: 1em 0em 0em 0em;
+}
+.informacoes span{
+    padding: 1em 1em 0em 0em;
+}
+
+
+
+
