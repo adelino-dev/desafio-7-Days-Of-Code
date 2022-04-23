@@ -40,7 +40,7 @@ button{
     font-size: 0.9rem;
 }
 
-.etiqueta{
+.tag{
     background-color: var(--main-color-suave);
     color: var(--main-color);
     padding: 0.3em;
@@ -59,34 +59,34 @@ nav{
     padding: 1rem 0;
 }
 
-nav #paginas a{
+nav #menu a{
     text-decoration: none;
     color: var(--text-color);
     margin-right: 2rem;
 }
 
-#botaoEntrar{
+#logIn{
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-#botaoCadastrar{
+#signUp{
     box-shadow: var(--main-box-shadow);
     background-color: var(--main-color);
     color: var(--background-color);
 }
 
 /*------------------ Sobre Nós ------------------ */
-#sobreNos{
+#about-us{
     margin: 100px;
     align-items: center;
 }
 
-#sobreNos h1 {
+#about-us h1 {
     font-size: 2rem;
 }
 
-#sobrenos p{
+#about-us p{
     font-weight: 600;
     max-width: 50%;
     text-align: center;
@@ -95,7 +95,7 @@ nav #paginas a{
 
 /*------------------ Métricas ------------------ */
 
-.metricas-container{
+.metrics{
     display: flex;
     justify-content: space-around;
     align-content: space-around;
@@ -105,17 +105,17 @@ nav #paginas a{
 
 }
 
-.metricas-container div{
+.metrics div{
     width: 250px;
 }
 
-.metricas-container h1{
+.metrics h1{
     color: var(--main-color);
     font-size: 50px;
     margin: 0px;
 }
 
-.metricas-container h2{
+.metrics h2{
     font-size: 16px;
 }
 
@@ -178,7 +178,7 @@ aside blockquote{
     padding: 1em 5em;    
 }
 
-.colaborador{
+.collaborator{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -186,12 +186,12 @@ aside blockquote{
 }
 
 
-.colaborador .nome{
+.collaborator .name{
     font-weight: 600;
     margin-top: 1em;
 }
 
-.colaborador .oficio{
+.collaborator .occupation{
     color: var(--text-color);
     margin-top: 0.4em;
     font-size: 
@@ -239,3 +239,4 @@ footer button{
     background-color: var(--main-color);
     color: var(--background-color);
 }
+
