@@ -72,9 +72,21 @@ nav #links a{
     padding: 2em;
 }
 
+nav #links a:hover{
+    background-color: var(--main-color);
+    color: var(--background-color);
+    transition: 0.5s;
+}
+
 button#logIn{
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+button#logIn:hover{
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transition: 0.5s;
 }
 
 button#signUp{
@@ -82,6 +94,8 @@ button#signUp{
     background-color: var(--main-color);
     color: var(--background-color);
 }
+
+
 
 
 nav #menu{
@@ -317,6 +331,7 @@ footer button{
     #links a {
         margin-right: 0;
     }
+    
     
     #menu {
         flex-direction: column;
