@@ -21,8 +21,10 @@
 
 /*------------------ Geral: */
 body{
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
-    height: 100vh;
     background-color: var(--background-color);
     text-align: center;
 }
@@ -34,6 +36,7 @@ p{
 button{
     cursor: pointer;
     padding: 0.8rem 1rem;
+    border: none;
     border-radius: 0.5rem;
     
     font-weight: 500;
@@ -56,30 +59,60 @@ nav{
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    padding: 1rem 0;
 }
 
-nav #menu a{
+nav #links{
+    display: flex;
+    justify-content: first baseline;
+}
+
+nav #links a{
     text-decoration: none;
     color: var(--text-color);
-    margin-right: 2rem;
+    padding: 2em;
 }
 
-#logIn{
+button#logIn{
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-#signUp{
+button#signUp{
     box-shadow: var(--main-box-shadow);
     background-color: var(--main-color);
     color: var(--background-color);
 }
 
+
+nav #menu{
+    display: flex;
+    align-items: baseline;
+}
+.sideMenu {
+    display: none;
+    visibility: hidden;
+}
+  
+#menu.active {
+    right: 0;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+  
+.sideMenu img {
+    position: relative;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
 /*------------------ Sobre Nós ------------------ */
 #about-us{
-    margin: 100px;
+    margin: 100px 15%;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #about-us h1 {
@@ -88,9 +121,8 @@ nav #menu a{
 
 #about-us p{
     font-weight: 600;
-    max-width: 50%;
     text-align: center;
-    line-height: 1.5rem;
+    width: 50%;
 }
 
 /*------------------ Métricas ------------------ */
@@ -100,13 +132,11 @@ nav #menu a{
     justify-content: space-around;
     align-content: space-around;
     text-align: left;
-    
-
 
 }
 
 .metrics div{
-    width: 250px;
+    width: 15%;
 }
 
 .metrics h1{
@@ -121,18 +151,24 @@ nav #menu a{
 
 /*------------------ Main ------------------ */
 main{
-    margin: 5em 10em 5em 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main>div>img{
+    max-width: 95%;
 }
 /*------ Section Vagas:*/
 
 #vagas{
     margin: 2em 20%;
+    width: 60%;
 }
 #vagas h2{
     font-size: 1.2em;
     font-weight: 600;
     text-align: left;
-    margin-top: ;
+    margin-top: 3em;
 }
 
 .vaga {
@@ -145,8 +181,8 @@ main{
 
     border-radius: 0.6rem;
     box-shadow: var(--main-box-shadow);
-    padding: 2em 5em 2em 2em ;
-    margin: 2em auto;
+    padding: 2em 60% 2em 2em ;
+    margin: 2em 0px;
 }
 
 .titulo-vaga{
@@ -169,13 +205,22 @@ main{
 
 /*------------------ Aside: ------------------ */
 aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--main-color-suave);
-    padding: 5em 1em; 
+    padding: 5em 0em;
+    margin: 5%;
 }
+
+aside div.blockquote{
+    width: 60%;
+}
+
 aside blockquote{
-    font-weight: bold;
-    font-size: 2rem;
-    padding: 1em 5em;    
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2em 0em;
 }
 
 .collaborator{
@@ -196,17 +241,18 @@ aside blockquote{
     margin-top: 0.4em;
     font-size: 
 }
+
 /*------------------ Footer: ------------------ */
 footer{
     background-color: var(--text-color-suave);
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 5em 0em;
+
+    margin-top: 3em;
 }
 
 footer p{
-    margin: 0em 0em 2em 0em;
     font-size: 1.2em;;
 }
 
@@ -224,10 +270,10 @@ footer span{
 footer input{
     box-shadow: var(--main-box-shadow);
     width: 25em;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 1em;
     border-radius: 0.5rem;
     color: var(--text-color);
-    margin: 0em 1em;
+    margin: 0em 1%;
 }
 
 footer input::placeholder{
@@ -240,3 +286,54 @@ footer button{
     color: var(--background-color);
 }
 
+/*------------------ Responsividade: ------------------ */
+
+
+@media screen and (max-width: 1000px){
+  
+    #about-us p{
+        width: 100%;
+    }
+    .metrics{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .metrics div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sideMenu {
+        display: initial;
+        visibility: visible;
+    }
+    
+    #links {
+        margin: 2rem 0;
+    }
+    
+    #links a {
+        margin-right: 0;
+    }
+    
+    #menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        height: 100vh;
+        background: #F9FAFB;
+        width: 15rem;
+        padding: 2rem;
+        transition: all 1s;
+    }
+    
+    #links, #buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+}

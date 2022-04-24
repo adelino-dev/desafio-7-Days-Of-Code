@@ -16,15 +16,20 @@
             <img src="assets/logo.png" alt="Logo da Optimus Tech: se trata de uma simples line-arte, de cor vermelha, com quatro pequenos círculos demarcando quatro pontos do globo, seguida do nome 'OptimusTech'">
         </div>
 
-        <div id="menu">
-            <a href="#">Home</a>
-            <a href="#">Produtos</a>
-            <a href="#">Sobre nós</a>
+        <div class="sideMenu">
+            <img src="./assets/icons/menu-icon.svg" alt="Menu Icon">
         </div>
 
-        <div id = "buttons">
-            <button id = "logIn">Entrar</button>
-            <button id = "signUp">Cadastrar</button>
+        <div id="menu">
+            <div id="links">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Sobre nós</a>
+            </div>
+            <div id = "buttons">
+                <button id = "logIn">Entrar</button>
+                <button id = "signUp">Cadastrar</button>
+            </div>
         </div>
 
     </nav>
@@ -122,9 +127,15 @@
         </section>
 
         <aside>
-            <span class="tag">Veja o que nossos colaboradores falam sobre nós</span>
-    
-            <blockquote> OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</blockquote>
+            <div>
+                <span class="tag">Veja o que nossos colaboradores falam sobre nós</span>
+            </div>
+            
+            
+            <div class = "blockquote">
+                <blockquote> OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</blockquote>
+            </div>
+            
     
             <div class="collaborator">
                 <img src="assets/julia-castro.png" alt="Foto de Júlia Castro sorrindo ao olhar algo em um notebook">
@@ -145,5 +156,6 @@
         <span>&copy 2022 OptimusTech, Todos os direitos reservados.</span>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
